@@ -1,0 +1,4 @@
+stratification,n_strata,n_informative,odds_ratio,ci_lo,ci_hi
+site,47,15,11.534,4.226,31.477
+order x site,1791,29,13.273,4.296,41.007
+family x site,7283,32,11.175,3.738,33.409

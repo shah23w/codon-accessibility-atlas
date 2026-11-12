@@ -1,0 +1,101 @@
+source,system,gene,site,wild_type,resistance_allele,wt_informative_targets,predicted_informative,note
+this study,arthropod,AChE,G119,G,A,C D E S W,0,
+this study,arthropod,AChE,G119,G,S,C D E S W,1,
+this study,arthropod,AChE,A201,A,G,D E,0,
+this study,arthropod,AChE,A201,A,S,D E,0,
+this study,arthropod,AChE,G227,G,A,C D E S W,0,
+this study,arthropod,AChE,G227,G,S,C D E S W,1,
+this study,arthropod,AChE,G227,G,V,C D E S W,0,
+this study,arthropod,AChE,F290,F,G,,0,
+this study,arthropod,AChE,F290,F,V,,0,
+this study,arthropod,AChE,F290,F,Y,,0,
+this study,arthropod,AChE,F331,F,C,,0,
+this study,arthropod,AChE,F331,F,W,,0,
+this study,arthropod,AChE,F331,F,Y,,0,
+this study,arthropod,CHS1,I1017,I,F,F K N R S,1,
+this study,arthropod,GluCl_Px,A309,A,V,D E,0,
+this study,arthropod,GluCl_Tu,G323,G,D,C D E S W,1,
+this study,arthropod,RDL,A301,A,G,D E,0,
+this study,arthropod,RDL,A301,A,N,D E,0,
+this study,arthropod,RDL,A301,A,S,D E,0,
+this study,arthropod,RyR,E1338,E,D,,0,
+this study,arthropod,RyR,Q4594,Q,L,,0,
+this study,arthropod,RyR,I4790,I,K,F K N R S,1,
+this study,arthropod,RyR,I4790,I,M,F K N R S,0,
+this study,arthropod,RyR,G4946,G,E,C D E S W,1,
+this study,arthropod,RyR,G4946,G,V,C D E S W,0,
+this study,arthropod,VGSC,D59,D,G,,0,
+this study,arthropod,VGSC,I254,I,N,F K N R S,1,
+this study,arthropod,VGSC,V410,V,A,D E F I M,0,
+this study,arthropod,VGSC,V410,V,G,D E F I M,0,
+this study,arthropod,VGSC,V410,V,L,D E F I M,0,
+this study,arthropod,VGSC,V410,V,M,D E F I M,1,
+this study,arthropod,VGSC,E435,E,K,,0,
+this study,arthropod,VGSC,C785,C,R,,0,
+this study,arthropod,VGSC,M827,M,I,,0,
+this study,arthropod,VGSC,M918,M,I,,0,
+this study,arthropod,VGSC,M918,M,L,,0,
+this study,arthropod,VGSC,M918,M,T,,0,
+this study,arthropod,VGSC,M918,M,V,,0,
+this study,arthropod,VGSC,L925,L,I,F H I M P Q R S W,1,
+this study,arthropod,VGSC,L925,L,V,F H I M P Q R S W,0,
+this study,arthropod,VGSC,T929,T,C,I K M N R,0,
+this study,arthropod,VGSC,T929,T,I,I K M N R,1,
+this study,arthropod,VGSC,T929,T,N,I K M N R,1,
+this study,arthropod,VGSC,T929,T,V,I K M N R,0,
+this study,arthropod,VGSC,L932,L,F,F H I M P Q R S W,1,
+this study,arthropod,VGSC,I936,I,V,F K N R S,0,
+this study,arthropod,VGSC,G943,G,A,C D E S W,0,
+this study,arthropod,VGSC,Q945,Q,R,,0,
+this study,arthropod,VGSC,F979,F,S,,0,
+this study,arthropod,VGSC,S989,S,P,A C F G I L N P R W Y,1,
+this study,arthropod,VGSC,V1010,V,A,D E F I M,0,
+this study,arthropod,VGSC,V1010,V,L,D E F I M,0,
+this study,arthropod,VGSC,I1011,I,M,F K N R S,0,
+this study,arthropod,VGSC,I1011,I,V,F K N R S,0,
+this study,arthropod,VGSC,N1013,N,S,,0,
+this study,arthropod,VGSC,L1014,L,C,F H I M P Q R S W,0,
+this study,arthropod,VGSC,L1014,L,F,F H I M P Q R S W,1,
+this study,arthropod,VGSC,L1014,L,H,F H I M P Q R S W,1,
+this study,arthropod,VGSC,L1014,L,S,F H I M P Q R S W,1,
+this study,arthropod,VGSC,L1014,L,W,F H I M P Q R S W,1,
+this study,arthropod,VGSC,V1016,V,G,D E F I M,0,
+this study,arthropod,VGSC,V1016,V,I,D E F I M,1,
+this study,arthropod,VGSC,F1020,F,S,,0,
+this study,arthropod,VGSC,L1024,L,V,F H I M P Q R S W,0,
+this study,arthropod,VGSC,A1410,A,V,D E,0,
+this study,arthropod,VGSC,A1494,A,V,D E,0,
+this study,arthropod,VGSC,M1524,M,I,,0,
+this study,arthropod,VGSC,F1528,F,L,,0,
+this study,arthropod,VGSC,F1534,F,C,,0,
+this study,arthropod,VGSC,F1538,F,I,,0,
+this study,arthropod,VGSC,D1549,D,V,,0,
+this study,arthropod,VGSC,E1553,E,G,,0,
+this study,arthropod,VGSC,N1575,N,Y,,0,
+this study,arthropod,VGSC,W1594,W,R,,0,
+this study,arthropod,VGSC,I1752,I,V,F K N R S,0,
+this study,arthropod,VGSC,P1879,P,S,H Q,0,
+this study,arthropod,VGSC,L925,L,M,F H I M P Q R S W,1,
+this study,arthropod,CHS1,I1017,I,M,F K N R S,0,
+this study,arthropod,RyR,I4790,I,T,F K N R S,0,
+literature,fungal,CYP51/erg11,Y132,Y,F,,0,Sterol 14a-demethylase; Y132F/H in Candida and plant pathogens
+literature,fungal,CYP51/erg11,Y132,Y,H,,0,Sterol 14a-demethylase; Y132F/H in Candida and plant pathogens
+literature,fungal,SDH B,H277,H,Y,,0,Succinate dehydrogenase B H277Y/R
+literature,fungal,SDH B,H277,H,R,,0,Succinate dehydrogenase B H277Y/R
+literature,fungal,beta-tubulin,E198,E,A,,0,Benzimidazole resistance E198A/K/G
+literature,fungal,beta-tubulin,E198,E,K,,0,Benzimidazole resistance E198A/K/G
+literature,fungal,beta-tubulin,E198,E,G,,0,Benzimidazole resistance E198A/K/G
+literature,fungal,beta-tubulin,F200,F,Y,,0,Benzimidazole resistance F200Y
+literature,fungal,cytb,F129,F,L,,0,QoI resistance F129L
+literature,fungal,cytb,G143,G,A,C D E S W,0,QoI resistance G143A
+literature,weed,ALS/AHAS,W574,W,L,,0,ALS inhibitor resistance W574L
+literature,weed,ALS/AHAS,P197,P,H,H Q,1,ALS inhibitor resistance; P197 is the most substituted ALS residue
+literature,weed,ALS/AHAS,P197,P,Q,H Q,1,ALS inhibitor resistance; P197 is the most substituted ALS residue
+literature,weed,ALS/AHAS,P197,P,S,H Q,0,ALS inhibitor resistance; P197 is the most substituted ALS residue
+literature,weed,ALS/AHAS,P197,P,T,H Q,0,ALS inhibitor resistance; P197 is the most substituted ALS residue
+literature,weed,ALS/AHAS,P197,P,L,H Q,0,ALS inhibitor resistance; P197 is the most substituted ALS residue
+literature,weed,ALS/AHAS,P197,P,A,H Q,0,ALS inhibitor resistance; P197 is the most substituted ALS residue
+literature,weed,EPSPS,P106,P,S,H Q,0,Glyphosate resistance P106S/T/A/L
+literature,weed,EPSPS,P106,P,T,H Q,0,Glyphosate resistance P106S/T/A/L
+literature,weed,EPSPS,P106,P,A,H Q,0,Glyphosate resistance P106S/T/A/L
+literature,weed,EPSPS,P106,P,L,H Q,0,Glyphosate resistance P106S/T/A/L

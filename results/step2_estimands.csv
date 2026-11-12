@@ -1,0 +1,7 @@
+quantity,n,observed,expected,ratio,exact_p,note
+stratum_p_eq_1,55,55,55.0,,,correct by construction
+stratum_p_eq_0,5,0,0.0,,,correct by construction; these are the breaches
+conditional_informative,48,48,29.6937,1.6165,4.59528e-12,"SATURATED: ratio = 1/mean(p) = 1.6165, cannot be exceeded"
+unconditional_all_events,108,103,84.6937,1.2161,4.59528e-12,same exact P; degenerate strata carry no likelihood
+breach_rate,108,5,,0.046296,,95% CI 0.0152 to 0.1047 (Clopper-Pearson)
+breach_rate_confirmed_only,108,0,,0.0,,restricted to breaches confirmed on an independent assembly

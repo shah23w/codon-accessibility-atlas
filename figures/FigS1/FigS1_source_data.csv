@@ -1,0 +1,32 @@
+panel,key,value,low,high,note
+a,Diptera,137,,,
+a,Hymenoptera,136,,,
+a,Lepidoptera,74,,,
+a,Coleoptera,55,,,
+a,Hemiptera,38,,,
+a,Decapoda,20,,,
+a,Ixodida,19,,,
+a,Araneae,14,,,
+a,Sarcoptiformes,10,,,
+a,Orthoptera,9,,,
+a,Trombidiformes,8,,,
+a,Blattodea,6,,,
+a,further orders pooled,66,,,32 orders
+b,AChE,589,,,5 sites
+b,VGSC,585,,,34 sites
+b,GluCl,573,,,2 sites
+b,CHS1,529,,,1 sites
+b,RyR,489,,,4 sites
+b,RDL,484,,,1 sites
+c,CHS1 amino acid,93.69369369369369,,,n = 111
+c,CHS1 codon,89.1891891891892,,,n = 111
+c,GluCl amino acid,97.3913043478261,,,n = 230
+c,GluCl codon,92.17391304347827,,,n = 230
+c,RDL amino acid,83.92857142857143,,,n = 112
+c,RDL codon,74.10714285714286,,,n = 112
+c,RyR amino acid,99.03536977491962,,,n = 311
+c,RyR codon,99.03536977491962,,,n = 311
+c,VGSC amino acid,98.58635525507069,,,n = 3254
+c,VGSC codon,96.18930547019053,,,n = 3254
+c,AChE amino acid,97.92027729636048,,,n = 577
+c,AChE codon,93.24090121317158,,,n = 577

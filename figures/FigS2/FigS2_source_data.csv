@@ -1,0 +1,15 @@
+panel,key,value,low,high,note
+,"all events, atlas-pool null",1.2162806845180458,,,n = 108; permutation P = 1.99996e-05
+,collapsed to one event per genus,1.1882,,,n = 96; permutation P = 4.99975e-05
+,collapsed to one event per family,1.1854,,,n = 89; permutation P = 4.99975e-05
+,collapsed to one event per order,1.1806,,,n = 81; permutation P = 4.99975e-05
+,permuted within taxonomic order,1.146,,,n = 108; permutation P = 9.9999e-06
+,call replicated in a 2nd assembly,1.186,,,n = 44; permutation P = 4.99995e-05
+,amino acid confirmed,1.182,,,n = 42; permutation P = 0.000119999
+,exact codon confirmed (strictest),1.188,,,n = 41; permutation P = 8.99991e-05
+,"exact codon, independent only",1.184,,,n = 30; permutation P = 0.000729993
+,well-studied species,1.173,,,n = 69; permutation P = 4.99975e-05
+,less-studied species,1.308,,,n = 39; permutation P = 9.9995e-05
+,first reported 2008 or earlier,1.1717654085477274,,,n = 38; permutation P = 0.00103998
+,first reported after 2008,1.2402005915027292,,,n = 70; permutation P = 1.99996e-05
+,VGSC L1014 removed entirely,1.170987929837671,,,n = 89; permutation P = 1.99996e-05

@@ -1,0 +1,3 @@
+restriction,n_rows,n_events,odds_ratio,ci_lo,ci_hi
+all sites (baseline),40312,108,11.534,4.226,31.477
+excluding the four alt-exon sites,35332,93,12.262,3.581,41.991

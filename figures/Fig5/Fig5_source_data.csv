@@ -1,0 +1,38 @@
+panel,key,value,low,high,note
+a,R,11,,,6 codons; targets: C H I K L M P Q S T W
+a,S,11,,,6 codons; targets: A C F G I L N P R W Y
+a,L,9,,,6 codons; targets: F H I M P Q R S W
+a,G,5,,,4 codons; targets: C D E S W
+a,I,5,,,3 codons; targets: F K N R S
+a,T,5,,,4 codons; targets: I K M N R
+a,V,5,,,4 codons; targets: D E F I M
+a,A,2,,,4 codons; targets: D E
+a,K,2,,,2 codons; targets: I M
+a,P,2,,,4 codons; targets: H Q
+a,C,0,,,2 codons; targets: 
+a,D,0,,,2 codons; targets: 
+a,E,0,,,2 codons; targets: 
+a,F,0,,,2 codons; targets: 
+a,H,0,,,2 codons; targets: 
+a,M,0,,,1 codons; targets: 
+a,N,0,,,2 codons; targets: 
+a,Q,0,,,2 codons; targets: 
+a,W,0,,,1 codons; targets: 
+a,Y,0,,,2 codons; targets: 
+b,K AAA,ATA,,,Ile; codons disagree
+b,K AAG,ATG,,,Met; codons disagree
+b,E GAA,GTA,,,Val; codons agree
+b,E GAG,GTG,,,Val; codons agree
+c,not_informative_fraction_0_or_1,60,,,
+c,not_informative_strictly_between,0,,,
+c,informative_fraction_0_or_1,0,,,
+c,informative_strictly_between,48,,,equals canonical n_events_supply_informative
+d,fungal CYP51/erg11 Y132 Y,0,,,1 = can show the effect
+d,fungal SDH B H277 H,0,,,1 = can show the effect
+d,fungal beta-tubulin E198 E,0,,,1 = can show the effect
+d,fungal beta-tubulin F200 F,0,,,1 = can show the effect
+d,fungal cytb F129 F,0,,,1 = can show the effect
+d,fungal cytb G143 G,0,,,1 = can show the effect
+d,weed ALS/AHAS W574 W,0,,,1 = can show the effect
+d,weed ALS/AHAS P197 P,1,,,1 = can show the effect
+d,weed EPSPS P106 P,0,,,1 = can show the effect

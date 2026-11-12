@@ -1,0 +1,21 @@
+panel,key,value,low,high,note
+a,VGSC,34,,,"254 candidates, 49 observed"
+a,AChE,5,,,"35 candidates, 11 observed"
+a,RyR,4,,,"29 candidates, 7 observed"
+a,GluCl,2,,,"15 candidates, 2 observed"
+a,CHS1,1,,,"9 candidates, 2 observed"
+a,RDL,1,,,"7 candidates, 2 observed"
+b,S. cerevisiae,1.05,0.89,1.21,clonal
+b,E. coli,0.98,0.71,1.25,clonal
+b,M. tuberculosis,0.85,0.31,1.37,clonal
+b,all genes pooled (this study),0.4462,0.0478,1.1157,sexual
+b,sodium channel (this study),1.1,0.45,1.8,sexual
+b,five other genes (this study),-0.1,-0.85,0.7,sexual
+c,S. cerevisiae,0.972,,,"published 1.05, difference 0.078"
+c,E. coli,1.069,,,"published 0.98, difference 0.089"
+c,M. tuberculosis,0.774,,,"published 0.85, difference 0.076"
+d,multiplier 1,0.36,,,"47 strata, 200 simulations"
+d,multiplier 2,0.63,,,"94 strata, 200 simulations"
+d,multiplier 4,0.88,,,"188 strata, 200 simulations"
+d,multiplier 6,0.995,,,"282 strata, 200 simulations"
+d,multiplier 8,0.99,,,"376 strata, 200 simulations"

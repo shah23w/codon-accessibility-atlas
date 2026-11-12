@@ -1,0 +1,24 @@
+quantity,value,note
+beta_headline_refit,0.4462,recomputed here; beta01 publishes 0.4462
+vgsc_share_of_informative_strata,0.7234,34 of 47
+beta_pooled_kappa_fixed2,0.6539,"all 47 strata, kappa fixed 2 and gamma free: the like-for-like comparator for the VGSC and non-VGSC fits, which fix kappa the same way"
+docs_per_stratum_vgsc,1.44,49 documented alleles over 34 sodium-channel strata
+docs_per_stratum_other,1.85,"24 documented alleles over 13 strata in the other genes; per gene AChE 2.20, CHS1 2.00, GluCl_Px 1.00, GluCl_Tu 1.00, RDL 2.00, RyR 1.75"
+n_strata_non_vgsc,13,"informative strata outside the sodium channel, against 34 within it"
+drop_vgsc_kappa_at_bound,1,kappa = 100.000 against KAPPA_MAX = 100.0
+beta_vgsc_only,1.1,"95% profile [0.450, 1.800], kappa fixed 2, 34 strata"
+beta_non_vgsc_contains_pooled,1,"non-VGSC 95% [-0.850, 0.700] against pooled 0.650"
+beta_without_vgsc,-0.1,"95% profile [-0.850, 0.700], kappa fixed 2"
+beta_without_vgsc_ci_width,1.55,"against 1.0500 with all genes; a wider interval means less information, not a different beta"
+beta_gene_interaction_LR,4.406,df = 1
+beta_gene_interaction_P,0.03581,H0: one beta for all genes vs H1: separate beta for VGSC; kappa fixed 2
+beta_gene_interaction_P_bootstrap,0.027,1000 simulations under H0; the asymptotic P is 0.0358
+n_strata_with_event,37,of 47; the rest carry a curated repertoire but no species-level event
+beta_event_bearing_sites_kappa2,0.5743,"kappa fixed 2, 37 strata that carry at least one of the curated events; the comparable all-strata value is 0.6539"
+compatible_with_S_cerevisiae,1,"Cano 2022 PNAS Table 1 beta 1.05 [0.89, 1.21]"
+compatible_with_E_coli,1,"Cano 2022 PNAS Table 1 beta 0.98 [0.71, 1.25]"
+compatible_with_M_tuberculosis,1,"Cano 2022 PNAS Table 1 beta 0.85 [0.31, 1.37]"
+overlaps_prediction_A_asexual_supply,1,A: beta 0.1-0.6
+contains_prediction_B_sexual_origin_fixation,1,B: beta = 1
+discriminates_A_vs_B,0,0 means the interval contains both predictions and no choice between them is supported
+multiplier_for_80pc_power,4,"188 informative strata, to separate beta = 1.0 from beta = 0.6"

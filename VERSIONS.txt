@@ -1,0 +1,30 @@
+Two environments produced what is in this deposit.
+
+FIGURES - the environment that drew the PDFs, TIFFs and PNGs in
+figures/, and the one `python3 src/fig99_build_and_verify.py`
+was last run in.
+Python 3.12.7
+
+numpy          1.26.4
+scipy          1.13.1
+pandas         2.3.2
+matplotlib     3.10.0
+statsmodels    0.14.2
+biopython      1.87
+openpyxl       3.1.5
+
+ANALYSIS - the pinned environment that computed the tables in
+results/ which the figure scripts read. Taken from
+requirements.txt, which also records that the four steps owning
+the headline statistics were re-run under it and reproduced
+results/canonical_quantities.csv byte for byte.
+Python 3.11.16
+
+biopython      1.88
+pandas         3.0.6
+numpy          2.4.6
+scipy          1.17.1
+statsmodels    0.15.0
+matplotlib     3.10.9
+python-docx    1.2.0
+openpyxl       3.1.5

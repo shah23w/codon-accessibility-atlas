@@ -1,0 +1,6 @@
+pair_predicted_informative,observed_reachable_fraction,n_events
+0,exactly 0 or 1,60
+0,strictly between 0 and 1,0
+1,exactly 0 or 1,0
+1,strictly between 0 and 1,48
+,total,108

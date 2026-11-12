@@ -1,0 +1,13 @@
+panel,key,value,low,high,note
+a,codon_pool | rapid,1.266,1.1922,1.3662,n = 108; exact P = 2.1654219714297213e-14
+a,codon_pool | deep_time,1.5054,1.3878,1.6481,n = 489; exact P = 2.317080358232551e-79
+a,residue_uniform | rapid,1.2603,1.1829,1.3447,n = 108; exact P = 2.672923206202214e-10
+a,residue_uniform | deep_time,1.2392,1.1727,1.3093,n = 489; exact P = 2.5019542632054846e-14
+a,residue_weighted | rapid,1.1263,1.0616,1.1883,n = 108; exact P = 2.144833343292554e-05
+a,residue_weighted | deep_time,1.0123,0.9745,1.0483,n = 489; exact P = 0.270923600762841
+b,codon_pool | rapid,1.3445,1.2295,1.5045,n = 54; exact P = 4.209368783711149e-09
+b,codon_pool | deep_time,1.335,1.1476,1.687,n = 51; exact P = 1.13905671827784e-09
+b,residue_uniform | rapid,1.2643,1.1614,1.3793,n = 54; exact P = 4.08797897142857e-05
+b,residue_uniform | deep_time,1.2842,1.1138,1.4977,n = 51; exact P = 0.000520073093734196
+b,residue_weighted | rapid,1.105,1.0042,1.2122,n = 54; exact P = 0.016634802577577143
+b,residue_weighted | deep_time,1.0666,0.9796,1.1577,n = 51; exact P = 0.13367263190990572

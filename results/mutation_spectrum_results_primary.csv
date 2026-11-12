@@ -1,0 +1,10 @@
+analysis,estimate,p_value,n,detail
+ts_fraction_mannwhitney,0.1859219808885521,0.00016897713798201284,349,observed minus unobserved
+transition_only_fisher,2.097107438016529,0.011415307835977424,349,29/73 vs 66/276
+ts_fraction_mean_observed,0.4428008108659724,,73,"mean transition fraction, observed"
+ts_fraction_mean_unobserved,0.2568788299774203,,276,"mean transition fraction, never observed"
+corr_ts_fraction_esm,0.1436870083052314,,349,Pearson r between transition fraction and ESM score
+gee_ts_adjusted_for_esm,2.18171074266967,0.005587553863292561,349,"transition fraction, adjusted for ESM score"
+gee_ts_adjusted_full,2.2266891274865848,0.005189775613278453,349,adjusted for ESM and codon supply
+event_level_ts,0.2613669970510448,1.4467524727061182e-07,103,"chosen vs foregone, per-species codon"
+within_site_permutation_ts,0.4428008108659724,0.0013499325033748313,47,20000 within-site shuffles

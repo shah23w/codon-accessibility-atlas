@@ -1,0 +1,15 @@
+panel,key,value,low,high,note
+a,"never observed, mean transition fraction",25.68788299774203,,,n = 276
+a,"observed, mean transition fraction",44.28008108659724,,,n = 73
+a,"never observed, reachable only by a transition",23.91304347826087,,,per cent of substitutions
+a,"observed, reachable only by a transition",39.726027397260275,,,per cent of substitutions
+b,"Transition fraction
+alone",2.4432,1.4347,4.1607,P = 0.00100605
+b,+ ESM tolerability,2.1817,1.2565,3.7882,P = 0.00558755
+b,+ ESM + codon supply,2.2267,1.2702,3.9035,P = 0.00518978
+c,"Atlas pool
+all wild-type species",1.216153,1.159,1.288,P = 4.59438e-12
+c,"Within record
+studied species only",1.069954,1.036,1.11,P = 9.78033e-05
+c,"Within protein
+same gene + residue",1.2457,1.1909,1.3128,P = 1.03229e-13

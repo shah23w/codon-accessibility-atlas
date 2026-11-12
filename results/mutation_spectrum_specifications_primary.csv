@@ -1,0 +1,8 @@
+specification,term,odds_ratio,ci_lo,ci_hi,p_value,n
+transition fraction alone,ts_fraction,2.4432,1.4347,4.1607,0.001006047249107907,349
+tolerability alone,esm_score,1.16,1.0804,1.2455,4.268892259565087e-05,349
+BOTH,ts_fraction,2.1817,1.2565,3.7882,0.005587553863292561,349
+BOTH,esm_score,1.1501,1.0671,1.2397,0.00025415687888479,349
+plus codon supply,ts_fraction,2.2267,1.2702,3.9035,0.005189775613278453,349
+plus codon supply,esm_score,1.1267,1.0354,1.226,0.0056741086969307715,349
+plus codon supply,frac_codons_reaching,2.4942,0.6946,8.9567,0.16114498575334124,349

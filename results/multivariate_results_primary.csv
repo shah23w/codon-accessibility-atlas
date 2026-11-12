@@ -1,0 +1,12 @@
+analysis,estimate,p_value,n,detail
+2x2_necessary_sufficient,23.716183574879228,2.4745870762163286e-25,893,P(obs|acc)=0.2092 P(obs|inacc)=0.0110
+2x2_accessible_observed,73,,893,cell count of the necessary/sufficient 2x2
+2x2_accessible_total,349,,893,cell count of the necessary/sufficient 2x2
+2x2_inaccessible_observed,6,,893,cell count of the necessary/sufficient 2x2
+2x2_inaccessible_total,544,,893,cell count of the necessary/sufficient 2x2
+gee_adjusted_accessible,19.329483305747818,1.557548195616524e-11,893,unadjusted OR=23.716; attenuation=6.5%
+gee_adjusted_esm,1.1702771771287792,7.329494640174115e-06,893,"per 1 log-unit of ESM score, adjusted for accessibility"
+gee_adjusted_accessible_no_ache,23.950382223804635,6.25383626076642e-08,798,AChE is scored on the Torpedo californica reference; 95 of 893 candidate rows excluded
+gee_adjusted_esm_no_ache,1.166578221119532,5.868735285764759e-05,798,"AChE is scored on the Torpedo californica reference; 95 of 893 candidate rows excluded; per 1 log-unit of ESM score, adjusted for accessibility"
+likelihood_ratio_accessible,89.33627593236173,3.3309493798925612e-21,893,pseudoR2 0.0785->0.2458
+mantel_haenszel_esm_stratified,18.432511903518066,4.454102354312294e-19,893,"95% CI [7.889,43.066]; 5 strata"

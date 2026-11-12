@@ -1,0 +1,6 @@
+adjustment,n_strata,n_informative,odds_ratio,ci_lo,ci_hi
+site only (Step 10 baseline),47,15,11.534,4.226,31.477
+site x Grantham tertile,63,17,11.827,3.982,35.127
+site x ESM-2 tertile (subset),62,16,13.574,4.574,40.28
+site x panel-frequency tertile,60,16,15.986,4.979,51.326
+site x Grantham x panel-frequency,73,16,31.069,5.883,164.071

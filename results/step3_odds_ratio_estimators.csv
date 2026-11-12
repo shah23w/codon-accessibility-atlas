@@ -1,0 +1,6 @@
+estimator,odds_ratio,ci_lo,ci_hi,p_value,note
+crude_2x2_unadjusted,23.7162,,,,"a=73 b=276 c=6 d=538; not adjusted, not stratified"
+exact_stratified_hypergeometric,,,,1.47253e-24,"observed 73 vs expected 31.79, sd 4.14, z 9.96; assumption-free, conditions on site margins"
+mantel_haenszel_by_site,26.2581,10.583,65.1502,,Robins-Breslow-Greenland interval
+conditional_logit_by_site_adj_esm,14.3033,5.9618,34.3155,,"conditional (fixed-effects) logit, strata = site, adjusted for ESM-2; ESM-2 OR = 1.2979"
+site_cluster_bootstrap_of_mh,27.1724,12.9848,101.125,,"5000 resamples, seed 20260926, 20 undefined"

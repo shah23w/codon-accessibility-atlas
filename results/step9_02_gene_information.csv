@@ -1,0 +1,8 @@
+gene,strata,candidates,observed,drop_beta_kappa_free,drop_kappa,drop_kappa_at_bound,drop_beta_kappa_fixed2
+AChE,5,35,11,0.4777,8.93,0,0.9224
+CHS1,1,9,2,0.4775,4.717,0,0.6948
+GluCl_Px,1,7,1,0.4264,4.454,0,0.6085
+GluCl_Tu,1,8,1,0.4303,4.478,0,0.6183
+RDL,1,7,2,0.4602,5.339,0,0.7043
+RyR,4,29,7,0.4937,4.707,0,0.7285
+VGSC,34,254,49,-0.0909,100.0,1,-0.1202

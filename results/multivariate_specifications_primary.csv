@@ -1,0 +1,7 @@
+specification,term,odds_ratio,ci_lo,ci_hi,p_value,n
+accessibility alone,accessible,23.7162,10.102,55.6777,3.5549642766028773e-13,893
+tolerability alone,esm_score,1.2183,1.1363,1.3061,2.7666601657189022e-08,893
+BOTH (the question),accessible,19.3295,8.1719,45.7214,1.557548195616524e-11,893
+BOTH (the question),esm_score,1.1703,1.0925,1.2535,7.329494640174115e-06,893
+"BOTH, dropping AChE (vertebrate ESM-2 reference)",accessible,23.9504,7.581,75.6656,6.25383626076642e-08,798
+"BOTH, dropping AChE (vertebrate ESM-2 reference)",esm_score,1.1666,1.0821,1.2576,5.868735285764759e-05,798

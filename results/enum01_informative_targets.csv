@@ -1,0 +1,21 @@
+wild_type_aa,n_codons,n_informative_targets,informative_targets
+R,6,11,C H I K L M P Q S T W
+S,6,11,A C F G I L N P R W Y
+L,6,9,F H I M P Q R S W
+G,4,5,C D E S W
+I,3,5,F K N R S
+T,4,5,I K M N R
+V,4,5,D E F I M
+A,4,2,D E
+K,2,2,I M
+P,4,2,H Q
+C,2,0,
+D,2,0,
+E,2,0,
+F,2,0,
+H,2,0,
+M,1,0,
+N,2,0,
+Q,2,0,
+W,1,0,
+Y,2,0,

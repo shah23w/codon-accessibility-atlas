@@ -1,0 +1,11 @@
+metric,value
+species_compared,118
+paired_site_calls,4595
+aa_agreement,0.98
+codon_calls_comparable,4595
+codon_agreement,0.951
+synonymous_difference_rate,0.0289
+calls_not_comparable,0
+replicate_calls_with_no_atlas_site,121
+ache_paralogue_disagreements,18
+selection_rule,ortholog_selection (shared with the atlas arm)

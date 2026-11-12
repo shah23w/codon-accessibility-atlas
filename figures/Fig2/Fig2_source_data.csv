@@ -1,0 +1,62 @@
+panel,key,value,low,high,note
+a,AChE F290 background accessible,0.6666666666666666,,,1144 of 1716 rows
+a,AChE F290 observed accessible,1.0,0.2924017738212866,1.0,3 of 3 events; 572 species
+a,AChE F290 exact OR,inf,0.2065934937354834,inf,conditional exact
+a,AChE G119 background accessible,0.8095652173913044,,,931 of 1150 rows
+a,AChE G119 observed accessible,1.0,0.6637328831200572,1.0,9 of 9 events; 575 species
+a,AChE G119 exact OR,inf,0.4647813810307399,inf,conditional exact
+a,AChE G227 background accessible,0.8791523482245132,,,1535 of 1746 rows
+a,AChE G227 observed accessible,1.0,0.2924017738212866,1.0,3 of 3 events; 582 species
+a,AChE G227 exact OR,inf,0.05665953278543349,inf,conditional exact
+a,CHS1 I1017 background accessible,0.8865784499054821,,,938 of 1058 rows
+a,CHS1 I1017 observed accessible,1.0,0.2924017738212866,1.0,3 of 3 events; 529 species
+a,CHS1 I1017 exact OR,inf,0.05262570271736112,inf,conditional exact
+a,GluCl_Tu G323 background accessible,0.6442477876106195,,,364 of 565 rows
+a,GluCl_Tu G323 observed accessible,1.0,0.025,1.0,1 of 1 events; 565 species
+a,GluCl_Tu G323 exact OR,inf,0.014158918005548986,inf,conditional exact
+a,RDL A301 background accessible,0.6666666666666666,,,968 of 1452 rows
+a,RDL A301 observed accessible,0.0,0.0,0.975,0 of 1 events; 484 species
+a,RDL A301 exact OR,0.0,0.0,19.499999999416172,conditional exact
+a,RyR G4946 background accessible,0.6008676789587852,,,554 of 922 rows
+a,RyR G4946 observed accessible,1.0,0.2924017738212866,1.0,3 of 3 events; 461 species
+a,RyR G4946 exact OR,inf,0.2746061209724993,inf,conditional exact
+a,RyR I4790 background accessible,0.8645833333333334,,,166 of 192 rows
+a,RyR I4790 observed accessible,1.0,0.5903836027749966,1.0,7 of 7 events; 64 species
+a,RyR I4790 exact OR,inf,0.22151460136785753,inf,conditional exact
+a,VGSC L1014 background accessible,0.384180790960452,,,1020 of 2655 rows
+a,VGSC L1014 observed accessible,0.8947368421052632,0.668623335543234,0.9869878356282226,17 of 19 events; 531 species
+a,VGSC L1014 exact OR,13.827571181116324,3.2713815725284316,123.64627431357162,conditional exact
+a,VGSC L925 background accessible,0.6666666666666666,,,1110 of 1665 rows
+a,VGSC L925 observed accessible,1.0,0.4781762498950185,1.0,5 of 5 events; 555 species
+a,VGSC L925 exact OR,inf,0.4585383025862532,inf,conditional exact
+a,VGSC L932 background accessible,0.8434163701067615,,,474 of 562 rows
+a,VGSC L932 observed accessible,1.0,0.15811388300841897,1.0,2 of 2 events; 562 species
+a,VGSC L932 exact OR,inf,0.034742760228354895,inf,conditional exact
+a,VGSC S989 background accessible,0.8114602587800369,,,439 of 541 rows
+a,VGSC S989 observed accessible,1.0,0.025,1.0,1 of 1 events; 541 species
+a,VGSC S989 exact OR,inf,0.005957595934855866,inf,conditional exact
+a,VGSC T929 background accessible,0.2872727272727273,,,632 of 2200 rows
+a,VGSC T929 observed accessible,0.7142857142857143,0.2904208637373427,0.9633074338239145,5 of 7 events; 550 species
+a,VGSC T929 exact OR,6.238068132568026,1.0180460803319042,65.66995097110504,conditional exact
+a,VGSC V1016 background accessible,0.8418647166361974,,,921 of 1094 rows
+a,VGSC V1016 observed accessible,1.0,0.15811388300841897,1.0,2 of 2 events; 547 species
+a,VGSC V1016 exact OR,inf,0.035214127886317566,inf,conditional exact
+a,VGSC V410 background accessible,0.8599221789883269,,,1768 of 2056 rows
+a,VGSC V410 observed accessible,1.0,0.3976353643835253,1.0,4 of 4 events; 514 species
+a,VGSC V410 exact OR,inf,0.10732130993325552,inf,conditional exact
+a,"pooled, all curated events",1.2161,0.8952619054516794,0.9847990766945507,103 of 108 accessible; 84.6937 expected; exact P 4.59528e-12
+b,by site,11.534,4.226,31.477,primary
+b,by order × site,13.273,4.296,41.007,
+b,by family × site,11.175,3.738,33.409,
+b,× Grantham tertile,11.827,3.982,35.127,
+b,× ESM-2 tertile,13.574,4.574,40.28,
+b,× panel-frequency tertile,15.986,4.979,51.326,
+b,× Grantham × panel frequency,31.069,5.883,164.071,
+b,flagged species × gene dropped,8.199,1.904,35.302,
+b,site context identity ≥ 0.50,11.011,4.045,29.968,
+b,site context identity ≥ 0.70,10.478,3.864,28.41,
+b,single mapped candidate,10.607,3.623,31.049,
+b,four alt-exon sites excluded,12.262,3.581,41.991,
+b,collapsed to one row per species × site,6.931,0.869,55.246,
+b,phenotypically resistant species only,11.1251,4.1037,30.1599,
+b,"natural substitutions, same estimator",2.0091665340929556,1.5539033964891853,2.597812818248251,

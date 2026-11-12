@@ -1,0 +1,4 @@
+species,source_file,informative_codons,events,events_per_codon,beta_ours,ci_lo_ours,ci_hi_ours,beta_published,ci_lo_published,ci_hi_published,abs_difference,ci_width_ratio,ours_contains_theirs,theirs_contains_ours,rows_read,rows_set_aside
+S. cerevisiae,dataYeast.txt,60,713,11.9,0.972,0.816,1.128,1.05,0.89,1.21,0.078,0.975,1,1,354,0
+E. coli,dataEcoli.txt,55,602,10.9,1.069,0.907,1.235,0.98,0.71,1.25,0.089,0.607,1,1,354,0
+M. tuberculosis,dataMTB.txt,38,4413,116.1,0.774,0.726,0.822,0.85,0.31,1.37,0.076,0.091,0,1,354,0

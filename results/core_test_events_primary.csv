@@ -1,0 +1,109 @@
+species,record_species,gene,site_label,wild_type_aa,codon,resistance_allele,accessible,n_2step,in_combination,primary_ref,site_supply_fraction
+Helicoverpa armigera,Helicoverpa armigera,AChE,A201,A,GCT,S,True,0,False,"Guan, Xiao, Dong et al. (2025) Journal of economic entomology. PMID:39549281 DOI:10.1093/jee/toae268",1.0
+Musca domestica,Musca domestica,AChE,A201,A,GCT,S,True,0,False,"Koç-İnak, Akkaya, Sarıkaya et al. (2026) Ecotoxicology (London, England). PMID:42313285 DOI:10.1007/s10646-026-03107-7",1.0
+Phthorimaea operculella,Phthorimaea operculella,AChE,A201,A,GCA,S,True,0,False,"Zhu, Chen, Liu et al. (2024) Insects. PMID:38535389 DOI:10.3390/insects15030194",1.0
+Spodoptera frugiperda,Spodoptera frugiperda,AChE,A201,A,GCG,S,True,0,False,"Carvalho, Omoto, Field et al. (2013) PloS one. PMID:23614047 DOI:10.1371/journal.pone.0062268",1.0
+Tetranychus urticae,Tetranychus urticae,AChE,A201,A,GCT,S,True,0,False,"Xu, He, Zhang et al. (2018) Pesticide biochemistry and physiology. PMID:30195393 DOI:10.1016/j.pestbp.2018.07.008",1.0
+Tuta absoluta,Tuta absoluta,AChE,A201,A,GCT,S,True,0,False,"Zhu, Chen, Liu et al. (2024) Insects. PMID:38535389 DOI:10.3390/insects15030194",1.0
+Laodelphax striatellus,Laodelphax striatellus,RDL,A301,A,GCC,N,False,2,False,Nakao (2016) Neurotoxicology. PMID:27000517 DOI:10.1016/j.neuro.2016.03.009,0.0
+Plutella xylostella,Plutella xylostella,GluCl_Px,A309,A,GCC,V,True,0,False,"Wang, Puinean, O Reilly et al. (2017) Insect biochemistry and molecular biology. PMID:28576654 DOI:10.1016/j.ibmb.2017.05.006",1.0
+Blattella germanica,Blattella germanica,VGSC,C785,C,TGT,R,True,0,True,"Liu et al., 2000",1.0
+Helicoverpa armigera,Helicoverpa armigera,VGSC,D1549,D,GAC,V,True,0,True,"Head et al., 1998",1.0
+Helicoverpa armigera,Helicoverpa armigera,VGSC,E1553,E,GAA,G,True,0,True,"Head et al., 1998",1.0
+Blattella germanica,Blattella germanica,VGSC,E435,E,GAA,K,True,0,True,"Liu et al., 2000",1.0
+Blattella germanica,Blattella germanica,VGSC,F1020,F,TTC,S,True,0,False,"Pridgeon et al., 2002",1.0
+Plutella xylostella,Plutella xylostella,VGSC,F1020,F,TTC,S,True,0,False,"Endersby et al., 2011",1.0
+Varroa destructor,Varroa destructor,VGSC,F1528,F,TTC,L,True,0,True,"Wang et al., 2002",1.0
+Aedes aegypti,Aedes aegypti,VGSC,F1534,F,TTC,C,True,0,False,"Kawada et al., 2009",1.0
+Aedes albopictus,Aedes albopictus,VGSC,F1534,F,TTC,C,True,0,False,"Kasai et al., 2011",1.0
+Rhipicephalus microplus,Rhipicephalus microplus,VGSC,F1538,F,TTC,I,True,0,False,"He et al., 1999",1.0
+Tetranychus urticae,Tetranychus urticae,VGSC,F1538,F,TTC,I,True,0,True,"Tsagkarakou et al., 2009",1.0
+Helicoverpa armigera,Helicoverpa armigera,AChE,F290,F,TTT,V,True,0,False,"Guan, Xiao, Dong et al. (2025) Journal of economic entomology. PMID:39549281 DOI:10.1093/jee/toae268",1.0
+Musca domestica,Musca domestica,AChE,F290,F,TTT,Y,True,0,False,"Koç-İnak, Akkaya, Sarıkaya et al. (2026) Ecotoxicology (London, England). PMID:42313285 DOI:10.1007/s10646-026-03107-7",1.0
+Tuta absoluta,Tuta absoluta,AChE,F290,F,TTT,V,True,0,False,"Zhu, Chen, Liu et al. (2024) Insects. PMID:38535389 DOI:10.3390/insects15030194",1.0
+Myzus persicae,Myzus persicae,VGSC,F979,F,TTT,S,True,0,True,"Cassanelli et al., 2005",1.0
+Anopheles albimanus,Anopheles albimanus,AChE,G119,G,GGC,S,True,0,False,"Weill, Malcolm, Chandre et al. (2004) Insect molecular biology. PMID:14728661 DOI:10.1111/j.1365-2583.2004.00452.x",0.6191
+Anopheles arabiensis,Anopheles arabiensis,AChE,G119,G,GGC,S,True,0,False,"Keïta, Kané, Thiero et al. (2020) Parasites & vectors. PMID:32503614 DOI:10.1186/s13071-020-04150-x",0.6191
+Anopheles coluzzii,Anopheles coluzzii,AChE,G119,G,GGC,S,True,0,False,"Keïta, Kané, Thiero et al. (2020) Parasites & vectors. PMID:32503614 DOI:10.1186/s13071-020-04150-x",0.6191
+Anopheles gambiae,Anopheles gambiae,AChE,G119,G,GGC,S,True,0,False,"Weill, Malcolm, Chandre et al. (2004) Insect molecular biology. PMID:14728661 DOI:10.1111/j.1365-2583.2004.00452.x",0.6191
+Anopheles sinensis,Anopheles sinensis,AChE,G119,G,GGC,S,True,0,False,"He, Hu, Wang et al. (2023) Parasites & vectors. PMID:37268968 DOI:10.1186/s13071-023-05796-z",0.6191
+Culex pipiens,Culex pipiens,AChE,G119,G,GGC,S,True,0,False,"Weill, Malcolm, Chandre et al. (2004) Insect molecular biology. PMID:14728661 DOI:10.1111/j.1365-2583.2004.00452.x",0.6191
+Culex quinquefasciatus,Culex quinquefasciatus,AChE,G119,G,GGC,S,True,0,False,"Atyame, Alout, Mousson et al. (2019) Proceedings. Biological sciences. PMID:30963855 DOI:10.1098/rspb.2018.2273",0.6191
+Hyalella azteca,Hyalella azteca,AChE,G119,G,GGC,S,True,0,False,"Major, Weston, Lydy et al. (2019) Evolutionary applications. PMID:32211056 DOI:10.1111/eva.12888",0.6191
+Tetranychus urticae,Tetranychus urticae,AChE,G119,G,GGC,S,True,0,False,"Xu, He, Zhang et al. (2018) Pesticide biochemistry and physiology. PMID:30195393 DOI:10.1016/j.pestbp.2018.07.008",0.6191
+Musca domestica,Musca domestica,AChE,G227,G,GGC,A,True,0,False,"Koç-İnak, Akkaya, Sarıkaya et al. (2026) Ecotoxicology (London, England). PMID:42313285 DOI:10.1007/s10646-026-03107-7",1.0
+Musca domestica,Musca domestica,AChE,G227,G,GGC,V,True,0,False,"Koç-İnak, Akkaya, Sarıkaya et al. (2026) Ecotoxicology (London, England). PMID:42313285 DOI:10.1007/s10646-026-03107-7",1.0
+Spodoptera frugiperda,Spodoptera frugiperda,AChE,G227,G,GGA,A,True,0,False,"Carvalho, Omoto, Field et al. (2013) PloS one. PMID:23614047 DOI:10.1371/journal.pone.0062268",1.0
+Tetranychus urticae,Tetranychus urticae,GluCl_Tu,G323,G,GGT,D,True,0,False,"Kwon, Yoon, Clark et al. (2010) Insect molecular biology. PMID:20522121 DOI:10.1111/j.1365-2583.2010.01017.x",0.6442
+Chilo suppressalis,Chilo suppressalis,RyR,G4946,G,GGA,E,True,0,False,"Huang 黄镜梅, Rao 饶聪, Wang 王帅 et al. (2020) Insect biochemistry and molecular biology. PMID:32243905 DOI:10.1016/j.ibmb.2020.103367",0.2017
+Plutella xylostella,Plutella xylostella,RyR,G4946,G,GGG,E,True,0,False,"Guo, Wang, Zhou et al. (2013) Pest management science. PMID:24030900 DOI:10.1002/ps.3651",0.2017
+Plutella xylostella,Plutella xylostella,RyR,G4946,G,GGG,V,True,0,False,"Wang, Jiang, Hu et al. (2026) Pesticide biochemistry and physiology. PMID:42493011 DOI:10.1016/j.pestbp.2026.107192",1.0
+Pediculus humanus,Pediculus humanus,VGSC,G943,G,GGA,A,True,0,False,"Kristensen, 2005",1.0
+Aedes aegypti,Aedes aegypti,VGSC,I1011,I,ATA,M,True,0,False,"Brengues et al., 2003",1.0
+Aedes aegypti,Aedes aegypti,VGSC,I1011,I,ATA,V,True,0,False,"Saavedra-Rodriguez et al., 2007",1.0
+Spodoptera frugiperda,Spodoptera frugiperda,VGSC,I1011,I,ATT,M,True,0,False,"Saladini di Rovetino, Lueke, Masawang et al. (2025) Pesticide biochemistry and physiology. PMID:40915796 DOI:10.1016/j.pestbp.2025.106599",1.0
+Frankliniella occidentalis,Frankliniella occidentalis,CHS1,I1017,I,ATC,M,True,0,False,"Mavridis, Ilias, Papapostolou et al. (2023) Pest management science. PMID:36562265 DOI:10.1002/ps.7336",1.0
+Panonychus citri,Panonychus citri,CHS1,I1017,I,ATT,F,True,0,False,"Tadatsu, Sakashita, Panteleri et al. (2022) Pest management science. PMID:35639971 DOI:10.1002/ps.7021",0.7732
+Tetranychus urticae,Tetranychus urticae,CHS1,I1017,I,ATT,F,True,0,False,"Demaeght, Osborne, Odman-Naresh et al. (2014) Insect biochemistry and molecular biology. PMID:24859419 DOI:10.1016/j.ibmb.2014.05.004",0.7732
+Varroa destructor,Varroa destructor,VGSC,I1752,I,ATC,V,True,0,True,"Wang et al., 2002",1.0
+Chilo suppressalis,Chilo suppressalis,RyR,I4790,I,ATA,M,True,0,False,"Huang 黄镜梅, Rao 饶聪, Wang 王帅 et al. (2020) Insect biochemistry and molecular biology. PMID:32243905 DOI:10.1016/j.ibmb.2020.103367",1.0
+Plutella xylostella,Plutella xylostella,RyR,I4790,I,ATA,K,True,0,False,"Jouraku, Kuwazaki, Miyamoto et al. (2019) Insect biochemistry and molecular biology. PMID:31863874 DOI:10.1016/j.ibmb.2019.103308",0.5938
+Plutella xylostella,Plutella xylostella,RyR,I4790,I,ATA,M,True,0,False,Guo et al. 2014 Sci Rep 4:6924 (field); construct paper PMID 32798712 superseded,1.0
+Spodoptera exigua,Spodoptera exigua,RyR,I4790,I,ATA,M,True,0,False,"Han, Rahman, Shin et al. (2023) Pesticide biochemistry and physiology. PMID:37666604 DOI:10.1016/j.pestbp.2023.105579",1.0
+Spodoptera frugiperda,Spodoptera frugiperda,RyR,I4790,I,ATA,K,True,0,False,"Okuma, Cuenca, Nauen et al. (2022) Insects. PMID:35886802 DOI:10.3390/insects13070626",0.5938
+Spodoptera litura,Spodoptera litura,RyR,I4790,I,ATA,K,True,0,False,"Mei, Yang, Ye et al. (2025) Pesticide biochemistry and physiology. PMID:40015884 DOI:10.1016/j.pestbp.2025.106292",0.5938
+Spodoptera litura,Spodoptera litura,RyR,I4790,I,ATA,M,True,0,False,"Mei, Yang, Ye et al. (2025) Pesticide biochemistry and physiology. PMID:40015884 DOI:10.1016/j.pestbp.2025.106292",1.0
+Helicoverpa zea,Helicoverpa zea,VGSC,I936,I,ATT,V,True,0,False,"Hopkins and Pietrantonio, 2010",1.0
+Anopheles albimanus,Anopheles albimanus,VGSC,L1014,L,TTG,C,False,4,False,"Lol et al., 2013",0.0
+Anopheles arabiensis,Anopheles arabiensis,VGSC,L1014,L,TTA,S,True,0,False,"Stump et al., 2004",0.3616
+Anopheles gambiae,Anopheles gambiae,VGSC,L1014,L,TTA,F,True,0,False,"Martinez-Torres et al., 1998",0.8475
+Anopheles gambiae,Anopheles gambiae,VGSC,L1014,L,TTA,S,True,0,False,"Ranson et al., 2000",0.3616
+Anopheles sinensis,Anopheles sinensis,VGSC,L1014,L,TTG,C,False,4,False,"Kim et al., 2007",0.0
+Anopheles sinensis,Anopheles sinensis,VGSC,L1014,L,TTG,S,True,0,False,"Verhaeghen et al., 2010",0.3616
+Anopheles sinensis,Anopheles sinensis,VGSC,L1014,L,TTG,W,True,0,False,"Tan et al., 2012",0.226
+Anopheles stephensi,Anopheles stephensi,VGSC,L1014,L,TTA,F,True,0,False,"Enayati et al., 2003",0.8475
+Aphis gossypii,Aphis gossypii,VGSC,L1014,L,CTT,F,True,0,False,"Marshall et al., 2012",0.8475
+Blattella germanica,Blattella germanica,VGSC,L1014,L,TTG,F,True,0,True,"Liu et al., 2000",0.8475
+Brassicogethes aeneus,Meligethes aeneus,VGSC,L1014,L,CTT,F,True,0,False,"Nauen et al., 2012",0.8475
+Cydia pomonella,Cydia pomonella,VGSC,L1014,L,CTT,F,True,0,False,"Brun-Barale et al., 2005",0.8475
+Frankliniella occidentalis,Frankliniella occidentalis,VGSC,L1014,L,TTG,F,True,0,True,"Forcioli et al., 2002",0.8475
+Haematobia irritans,Haematobia irritans,VGSC,L1014,L,CTT,F,True,0,True,"Guerrero et al., 1997",0.8475
+Helicoverpa zea,Helicoverpa zea,VGSC,L1014,L,CTT,H,True,0,False,"Hopkins and Pietrantonio, 2010",0.4859
+Musca domestica,Musca domestica,VGSC,L1014,L,CTT,F,True,0,True,"Williamson et al., 1996",0.8475
+Musca domestica,Musca domestica,VGSC,L1014,L,CTT,H,True,0,False,"Liu and Pridgeon, 2002; Rinkevich et al., 2006",0.4859
+Phthorimaea operculella,Phthorimaea operculella,VGSC,L1014,L,CTT,F,True,0,False,"Zhu, Chen, Liu et al. (2024) Insects. PMID:38535389 DOI:10.3390/insects15030194",0.8475
+Stomoxys calcitrans,Stomoxys calcitrans,VGSC,L1014,L,CTT,H,True,0,False,"Olafson et al., 2011",0.4859
+Tetranychus urticae,Tetranychus urticae,VGSC,L1024,L,CTC,V,True,0,False,"Kwon et al., 2010",1.0
+Cimex lectularius,Cimex luctularis,VGSC,L925,L,CTT,I,True,0,False,"Yoon et al., 2008",0.3351
+Hyalella azteca,Hyelella azteca,VGSC,L925,L,CTC,I,True,0,False,"Weston et al., 2013",0.3351
+Rhipicephalus microplus,Rhipicephalus microplus,VGSC,L925,L,CTC,I,True,0,False,"Morgan et al., 2009",0.3351
+Tuta absoluta,Tuta absoluta,VGSC,L925,L,TTG,M,True,0,False,"Zhu, Chen, Liu et al. (2024) Insects. PMID:38535389 DOI:10.3390/insects15030194",0.6649
+Varroa destructor,Varroa destructor,VGSC,L925,L,CTG,V,True,0,False,"Gonzalez-Cabrera et al., 2013",1.0
+Pediculus humanus,Pediculus humanus,VGSC,L932,L,CTT,F,True,0,True,"Lee et al., 2003",0.8434
+Spodoptera frugiperda,Spodoptera frugiperda,VGSC,L932,L,TTG,F,True,0,False,"Carvalho, Omoto, Field et al. (2013) PloS one. PMID:23614047 DOI:10.1371/journal.pone.0062268",0.8434
+Pediculus humanus,Pediculus humanus,VGSC,M827,M,ATG,I,True,0,False,"Hodgdon et al., 2010",1.0
+Bemisia tabaci,Bemisia tabaci,VGSC,M918,M,ATG,V,True,0,False,"Morin et al., 2002",1.0
+Haematobia irritans,Haematobia irritans,VGSC,M918,M,ATG,T,True,0,True,"Guerrero et al., 1997",1.0
+Hyalella azteca,Hyelella azteca,VGSC,M918,M,ATG,L,True,0,False,"Weston et al., 2013",1.0
+Musca domestica,Musca domestica,VGSC,M918,M,ATG,T,True,0,True,"Williamson et al., 1996",1.0
+Plutella xylostella,Plutella xylostella,VGSC,M918,M,ATG,I,True,0,True,"Sonoda et al., 2008",1.0
+Tetranychus evansi,Tetranychus evansi,VGSC,M918,M,ATG,T,True,0,False,"Nyoni et al., 2011",1.0
+Tuta absoluta,Tuta absoluta,VGSC,M918,M,ATG,T,True,0,True,"Haddi et al., 2012",1.0
+Anopheles sinensis,Anopheles sinensis,VGSC,N1013,N,AAC,S,True,0,False,"Tan et al., 2012",1.0
+Anopheles gambiae,Anopheles gambiae,VGSC,N1575,N,AAT,Y,True,0,True,"Jones et al., 2012",1.0
+Lepeophtheirus salmonis,Lepeophtheirus salmonis,VGSC,Q945,Q,CAA,R,True,0,False,"Fallang et al., 2005",1.0
+Aedes aegypti,Aedes aegypti,VGSC,S989,S,TCC,P,True,0,True,"Srisawat et al., 2010",0.8115
+Bemisia tabaci,Bemisia tabaci,VGSC,T929,T,ACT,V,False,2,False,"Roditakis et al., 2006",0.0
+Ctenocephalides felis,Ctenocephalides felis,VGSC,T929,T,ACG,V,False,2,False,"Bass et al., 2004",0.0
+Leptinotarsa decemlineata,Leptinotarsa decemlineata,VGSC,T929,T,ACT,I,True,0,False,"Rinkevich et al., 2012",0.6873
+Leptinotarsa decemlineata,Leptinotarsa decemlineata,VGSC,T929,T,ACT,N,True,0,True,"Rinkevich et al., 2012",0.4618
+Musca domestica,Musca domestica,VGSC,T929,T,ACA,I,True,0,False,"Koç-İnak, Akkaya, Sarıkaya et al. (2026) Ecotoxicology (London, England). PMID:42313285 DOI:10.1007/s10646-026-03107-7",0.6873
+Pediculus humanus,Pediculus humanus,VGSC,T929,T,ACA,I,True,0,True,"Hodgdon et al., 2010",0.6873
+Spodoptera frugiperda,Spodoptera frugiperda,VGSC,T929,T,ACC,I,True,0,False,"Carvalho, Omoto, Field et al. (2013) PloS one. PMID:23614047 DOI:10.1371/journal.pone.0062268",0.6873
+Aedes aegypti,Aedes aegypti,VGSC,V1016,V,GTA,G,True,0,False,"Brengues et al., 2003",1.0
+Aedes aegypti,Aedes aegypti,VGSC,V1016,V,GTA,I,True,0,False,"Saavedra-Rodriguez et al., 2007",0.6837
+Cimex lectularius,Cimex luctularis,VGSC,V410,V,GTC,L,True,0,False,"Yoon et al., 2008",1.0
+Helicoverpa zea,Helicoverpa zea,VGSC,V410,V,GTG,A,True,0,False,"Hopkins and Pietrantonio, 2010",1.0
+Helicoverpa zea,Helicoverpa zea,VGSC,V410,V,GTG,G,True,0,False,"Hopkins and Pietrantonio, 2010",1.0
+Helicoverpa zea,Helicoverpa zea,VGSC,V410,V,GTG,M,True,0,False,"Hopkins and Pietrantonio, 2010",0.4397
+Culex quinquefasciatus,Culex quinquefasciatus,VGSC,W1594,W,TGG,R,True,0,False,"Xu et al., 2012",1.0

@@ -1,0 +1,24 @@
+statistic,value,p_value,q_value,method,detail
+expected_null_pooled,84.693285,,,"Poisson-binomial exact expectation, sum(p_i) over all events",108 events; sum of per-event accessibility probabilities
+pooled_enrichment,1.216153,4.5943753073999e-12,,Poisson-binomial exact tail,"103/108 accessible, expected 84.693285 (exact; not rounded)"
+informative_enrichment,1.616527,4.5943753073999e-12,,Poisson-binomial exact tail,"48/48, expected 29.693285"
+informative_excl_VGSC_L1014,1.6802,1.9622942882707372e-08,,Poisson-binomial exact tail,31/31
+informative_excl_VGSC,1.709,4.385332237334774e-05,,Poisson-binomial exact tail,17/17
+per_site_conditional_enrichment,1.762854,4.309072087904711e-06,,"Poisson-binomial exact tail; the allele is drawn from the repertoire reported at the site, so an obligate two-step allele counts as a failure","28/32 accessible, expected 15.883333; 4 of 5 obligate two-step events carry failure weight"
+within_record_null_enrichment,1.069954,9.780326893248114e-05,,"Poisson-binomial exact tail, permuting within record species","103/108 accessible, expected 96.265789"
+within_record_null_enrichment_CI,"[1.036, 1.110]",,,species-cluster bootstrap,5000 resamples over 41 species
+pooled_enrichment_CI,"[1.159, 1.288]",,,species-cluster bootstrap,5000 resamples
+site_VGSC_L1014,17/19,0.0002341328380183318,0.00281,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 11.243 of 19
+site_AChE_G119,9/9,0.013367167175229318,0.080203,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 5.572 of 9
+site_VGSC_L925,5/5,0.025026105227885974,0.100104,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 2.670 of 5
+site_RyR_G4946,3/3,0.040697154634130275,0.122091,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 1.403 of 3
+site_VGSC_T929,5/7,0.10303563892330256,0.247286,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 3.211 of 7
+site_RyR_I4790,7/7,0.209320068359375,0.41864,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 5.781 of 7
+site_VGSC_V410,4/4,0.4396887159533074,0.753752,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 3.440 of 4
+site_CHS1_I1017,3/3,0.5977715917253013,0.776019,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 2.546 of 3
+site_GluCl_Tu_G323,1/1,0.6442477876106195,0.776019,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 0.644 of 1
+site_VGSC_V1016,2/2,0.6837294332723949,0.776019,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 1.684 of 2
+site_VGSC_L932,2/2,0.7113511733640657,0.776019,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 1.687 of 2
+site_VGSC_S989,1/1,0.8114602587800369,0.81146,"Poisson-binomial exact, P unadjusted; q is Benjamini-Hochberg over the 12 non-degenerate sites",expected 0.811 of 1
+reciprocal_independent_strata,6/6,0.0125,,"exact conditional test of a common odds ratio over 2 non-overlapping strata, one per site","6 concordant of 6; expected 3.750 under a common odds ratio of 1; each site enters once, its shared first allele against the union of the others, so no arm is reused; strata: VGSC L1014 H vs S/W (8 and 7 species); VGSC L925 I vs M (3 and 2 species)"
+reciprocal_concordant_observations,9/9,0.003125,,exact conditional test of a common odds ratio across 3 contrasts at 2 sites,"9 concordant of 9 informative; expected 6.000 under a common odds ratio of 1; 11 distinct (site, allele, species) observations, not 14; contrasts: VGSC L1014 H vs S, VGSC L1014 H vs W, VGSC L925 I vs M"

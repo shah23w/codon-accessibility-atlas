@@ -1,0 +1,7 @@
+restriction,n_rows,n_events,n_informative_strata,odds_ratio,ci_lo,ci_hi
+all rows (Step 10 baseline),40312,108,15,11.534,4.226,31.477
+dropping every FLAGGED species x gene,13135,37,12,8.199,1.904,35.302
+site context identity >= 0.50,37313,102,15,11.011,4.045,29.968
+site context identity >= 0.70,31702,92,13,10.478,3.864,28.41
+only ONE candidate mapped at that site,27241,74,10,10.607,3.623,31.049
+collapsed to one row per species x site,23978,95,5,6.931,0.869,55.246
