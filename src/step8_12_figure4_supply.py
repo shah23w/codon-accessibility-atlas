@@ -141,11 +141,13 @@ for b in bench:
 # The pooled estimate across all informative strata. The legend's claim that
 # "our interval contains both and separates neither" is about THIS interval,
 # and it was the one row the panel did not draw.
-rows.append(("all genes pooled\n(this study)", B_POOLED, B_POOLED_LO, B_POOLED_HI,
+# One line per row: the colour separates this study (blue, orange) from the
+# published estimates (grey), and the legend says so.
+rows.append(("All genes pooled", B_POOLED, B_POOLED_LO, B_POOLED_HI,
              S.C_OBS, "sexual"))
-rows.append(("sodium channel\n(this study)", B_VGSC, B_VGSC_LO, B_VGSC_HI,
+rows.append(("Sodium channel", B_VGSC, B_VGSC_LO, B_VGSC_HI,
              S.C_OBS, "sexual"))
-rows.append(("five other genes\n(this study)", B_REST, B_REST_LO, B_REST_HI,
+rows.append(("Five other genes", B_REST, B_REST_LO, B_REST_HI,
              S.C_ALT, "sexual"))
 
 axB.axvspan(0.1, 0.6, color=S.MUTED, alpha=0.10, linewidth=0)
@@ -172,7 +174,7 @@ for _lab in _btl:
     if "." in _lab.get_text().split("\n")[0] and "(" not in _lab.get_text():
         _lab.set_fontstyle("italic")
 axB.set_xlabel("Mutational influence $\\beta$")
-axB.axvline(0.0, color=S.MUTED, lw=0.7)
+S.null_line(axB, 0.0)
 axB.set_xlim(-1.1, 2.0)
 S.recessive_grid(axB, "x")
 S.panel_label(axB, "b")
@@ -271,7 +273,11 @@ with open(src, "w", newline="") as fh:
         w.writerow(["a", g["gene"], g["strata"], "", "",
                     "%s candidates, %s observed" % (g["candidates"],
                                                     g["observed"])])
-    for lab, b, lo, hi, _, repro in rows:
+    for lab, b, lo, hi, colour, repro in rows:
+        # the panel tells this study from the published estimates by colour;
+        # the table has to say it in words
+        if colour != S.MUTED:
+            lab += " (this study)"
         w.writerow(["b", lab.replace("\n", " "), b, lo, hi, repro])
     for b in bench:
         w.writerow(["c", b["species"], b["beta_ours"], "", "",

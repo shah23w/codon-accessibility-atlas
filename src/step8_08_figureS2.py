@@ -131,7 +131,7 @@ def main():
     ax = fig.add_subplot(111)
     fig.subplots_adjust(left=0.415, right=0.965, top=0.975, bottom=0.125)
 
-    ax.axvline(1.0, color=st.INK2, lw=0.7, zorder=1)
+    st.null_line(ax, 1.0)
     ax.axvline(pooled, color=st.MUTED, lw=0.8, ls=(0, (3, 2)), zorder=1)
 
     ylabels, y = [], 0

@@ -236,7 +236,7 @@ def main():
     # ---- C: odds ratios ----------------------------------------------------
     axC = fig.add_subplot(gs[2])
     axC.set_xscale("log")
-    axC.axvline(1.0, color=st.INK2, lw=0.7, zorder=1)
+    st.null_line(axC, 1.0)
     for i, (name, (o, lo, hi, p), col) in enumerate(rows):
         axC.plot([lo, hi], [i, i], color=col, lw=1.1, solid_capstyle="butt", zorder=2)
         for x in (lo, hi):

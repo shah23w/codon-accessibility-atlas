@@ -22,7 +22,7 @@ import re
 import sys
 
 import matplotlib.pyplot as plt
-from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from atlas_common import DIR_FIGS, DIR_RESULTS, Tee, ensure_dirs  # noqa: E402
@@ -172,9 +172,9 @@ def main():
                      max(pos.x0 - 0.030, 0.005),
                      min(pos.y1 + 0.055, 0.980))
 
-    fig = plt.figure(figsize=(st.W2, 2.95))
+    fig = plt.figure(figsize=(st.W2, 2.78))
     gs = fig.add_gridspec(1, 3, width_ratios=[1.00, 1.02, 0.94], wspace=0.52,
-                          left=0.055, right=0.985, top=0.80, bottom=0.22)
+                          left=0.055, right=0.985, top=0.85, bottom=0.233)
 
     # ---- A: transition fraction, grouped columns --------------------------
     axA = fig.add_subplot(gs[0])
@@ -183,9 +183,9 @@ def main():
     xx = [0, 1]
     w = 0.30
     axA.bar([x - w / 2 - 0.015 for x in xx], means, width=w,
-            color=[st.MUTED, st.C_OBS], linewidth=0)
+            color=st.C_OBS, linewidth=0)
     axA.bar([x + w / 2 + 0.015 for x in xx], only, width=w,
-            color=[st.MUTED, st.C_OBS], alpha=0.45, linewidth=0)
+            color=st.C_OBS, alpha=0.45, linewidth=0)
     axA.set_xticks(xx)
     axA.set_xticklabels([f"Never\nobserved\n(n = {len(unobs)})",
                          f"Observed\n(n = {len(obs)})"], fontsize=6.2)
@@ -199,13 +199,16 @@ def main():
                  va="bottom", fontsize=6.0, color=st.INK)
         axA.text(i + w / 2 + 0.015, only[i] + 1.2, f"{only[i]:.0f}", ha="center",
                  va="bottom", fontsize=6.0, color=st.INK2)
-    axA.legend(handles=[
-        Line2D([], [], marker="s", ls="none", ms=4.5, color=st.C_OBS,
-               label="Mean % of one-step paths that are\ntransitions (per substitution)"),
-        Line2D([], [], marker="s", ls="none", ms=4.5, color=st.C_OBS, alpha=0.45,
-               label="% of substitutions reachable only\nby a transition")],
-        loc="lower left", bbox_to_anchor=(-0.02, 1.00), ncol=1, handletextpad=0.3,
-        borderpad=0.2, labelspacing=0.2, fontsize=6.0)
+    # Shade encodes the measure and position the group, which the axis names,
+    # so one swatch per measure keys every bar.
+    axA.legend(
+        handles=[Patch(color=st.C_OBS, lw=0),
+                 Patch(color=st.C_OBS, alpha=0.45, lw=0)],
+        labels=["Paths that are transitions (mean)",
+                "Reachable only by a transition"],
+        handlelength=1.1, handleheight=0.9,
+        loc="lower left", bbox_to_anchor=(-0.02, 1.00), ncol=1, handletextpad=0.4,
+        borderpad=0.2, labelspacing=0.3, fontsize=6.0)
     if p_mw:
         axA.text(1.58, 52, st.fmt_p(p_mw), ha="right", va="center", fontsize=6.2,
                  color=st.INK)
@@ -213,7 +216,7 @@ def main():
 
     # ---- B: transition OR across specifications ---------------------------
     axB = fig.add_subplot(gs[1])
-    axB.axvline(1.0, color=st.INK2, lw=0.7, zorder=1)
+    st.null_line(axB, 1.0)
     for i, (lab, o, lo, hi, p) in enumerate(specs):
         axB.plot([lo, hi], [i, i], color=st.C_OBS, lw=1.1, solid_capstyle="butt",
                  zorder=2)
@@ -236,7 +239,7 @@ def main():
     # do not show.
     axC = fig.add_subplot(gs[2])
     xs = list(range(len(nulls)))
-    axC.axhline(1.0, color=st.INK2, lw=0.7, zorder=1)
+    st.null_line(axC, 1.0, axis="y")
     for x, (lab, ratio, p, lo, hi) in zip(xs, nulls):
         axC.plot([x, x], [lo, hi], color=st.C_OBS, lw=1.1,
                  solid_capstyle="butt", zorder=2)

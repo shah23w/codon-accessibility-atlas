@@ -60,7 +60,7 @@ def main():
 
     for pi, (subset, ptitle) in enumerate(PANELS):
         ax = fig.add_subplot(gs[pi])
-        ax.axvline(1.0, color=st.INK2, lw=0.7, zorder=1)
+        st.null_line(ax, 1.0)
         yt, ylab = [], []
         xmax = 1.0
         for i, nl in enumerate(NULL_ORDER):

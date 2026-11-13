@@ -725,6 +725,24 @@ def fmt_or(est, lo, hi):
 # --------------------------------------------------------------------------
 # forest-plot primitives
 # --------------------------------------------------------------------------
+def null_line(ax, value, axis="x"):
+    """The null reference, drawn as furniture and not as data.
+
+    Lighter than the axis spines and behind every mark, so it cannot be read
+    as a second axis. The categorical axis it runs along carries no spine, as
+    in forest_axis: with a spine a few millimetres from the null, the two
+    parallel lines read as a doubled axis.
+    """
+    if axis == "x":
+        ax.axvline(value, color=RULE, linewidth=0.7, zorder=0)
+        ax.spines["left"].set_visible(False)
+        ax.tick_params(axis="y", length=0)
+    else:
+        ax.axhline(value, color=RULE, linewidth=0.7, zorder=0)
+        ax.spines["bottom"].set_visible(False)
+        ax.tick_params(axis="x", length=0)
+
+
 def forest_axis(ax, xlim, null=1.0, ticks=None):
     """A log effect-size axis with the null drawn as furniture, not as data."""
     ax.set_xscale("log")

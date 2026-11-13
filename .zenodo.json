@@ -1,0 +1,29 @@
+{
+  "title": "Codon accessibility atlas: figure and analysis code for “Synonymous codons constrain which insecticide resistance mutations evolve across arthropods”",
+  "upload_type": "software",
+  "description": "Code and data for the figures in <em>Synonymous codons constrain which insecticide resistance mutations evolve across arthropods</em>.",
+  "creators": [
+    {
+      "name": "Shah, Sakhawat",
+      "affiliation": "Huazhong Agricultural University",
+      "orcid": "0000-0003-0275-5450"
+    },
+    {
+      "name": "Junaid, Muhammad",
+      "affiliation": "Hubei Hongshan Laboratory; Huazhong Agricultural University"
+    },
+    {
+      "name": "Shah, Jawad Ali",
+      "affiliation": "Huazhong Agricultural University"
+    },
+    {
+      "name": "Ahmad, Diyan",
+      "affiliation": "Hubei Hongshan Laboratory; Huazhong Agricultural University"
+    },
+    {
+      "name": "Yang, Feng-Lian",
+      "affiliation": "Huazhong Agricultural University",
+      "orcid": "0000-0001-8980-9495"
+    }
+  ]
+}

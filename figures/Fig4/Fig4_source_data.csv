@@ -8,9 +8,9 @@ a,RDL,1,,,"7 candidates, 2 observed"
 b,S. cerevisiae,1.05,0.89,1.21,clonal
 b,E. coli,0.98,0.71,1.25,clonal
 b,M. tuberculosis,0.85,0.31,1.37,clonal
-b,all genes pooled (this study),0.4462,0.0478,1.1157,sexual
-b,sodium channel (this study),1.1,0.45,1.8,sexual
-b,five other genes (this study),-0.1,-0.85,0.7,sexual
+b,All genes pooled (this study),0.4462,0.0478,1.1157,sexual
+b,Sodium channel (this study),1.1,0.45,1.8,sexual
+b,Five other genes (this study),-0.1,-0.85,0.7,sexual
 c,S. cerevisiae,0.972,,,"published 1.05, difference 0.078"
 c,E. coli,1.069,,,"published 0.98, difference 0.089"
 c,M. tuberculosis,0.774,,,"published 0.85, difference 0.076"
