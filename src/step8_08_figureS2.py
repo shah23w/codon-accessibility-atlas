@@ -71,8 +71,15 @@ def main():
                      "Rerun the step that writes it (step3_04, step3_05, "
                      "step4_04 or step4_06) before building this figure."
                      % label)
+        # p_exact where the stratum has one, which is every stratum drawn
+        # against the atlas-pool null. The within-order permutation is a
+        # different null and has no closed form, so it keeps its permutation
+        # value and is marked as such rather than pooled into one bound.
+        exact = d.get("p_exact")
+        kind = "exact" if exact not in (None, "") else "permutation"
+        pv = float(exact) if kind == "exact" else float(d[p_key])
         return ("row", label, int(float(d[n_key])), float(d[e_key]),
-                float(d[p_key]), float(d["ci_lo"]), float(d["ci_hi"]))
+                pv, float(d["ci_lo"]), float(d["ci_hi"]), kind)
 
     items = [
         ("head", "Headline"),
@@ -117,7 +124,8 @@ def main():
 
     rows = [i for i in items if i[0] == "row"]
     pooled = rows[0][3]
-    worst_p = max(r[4] for r in rows)
+    worst_p = max(r[4] for r in rows if r[7] == "exact")
+    n_exact = sum(1 for r in rows if r[7] == "exact")
     # round the bound UP: plain %.2g turns 0.00104 into "0.001", which claims a
     # tighter bound than the data supports
     _mag = 10 ** (math.floor(math.log10(worst_p)) - 1)
@@ -139,7 +147,7 @@ def main():
         if it[0] == "head":
             ylabels.append(it[1])
         else:
-            _, lab, n, e, p, lo, hi = it
+            _, lab, n, e, p, lo, hi, _kind = it
             # An interval with end-caps, not a lollipop stem to the reference
             # line: the stem carried no information and read as uncertainty.
             ax.plot([lo, hi], [y, y], color=st.C_OBS, lw=1.0,
@@ -189,7 +197,7 @@ def main():
     # pooled value and the P bound are both stated in the legend.
 
     st.write_source_data("FigS2", [
-        ("", r[1], r[3], "", "", "n = %d; permutation P = %.6g" % (r[2], r[4]))
+        ("", r[1], r[3], "", "", "n = %d; %s P = %.6g" % (r[2], r[7], r[4]))
         for r in rows])
 
     st.write_legend_data("figureS2_robustness", {
@@ -197,6 +205,7 @@ def main():
         "pooled_enrichment": pooled,
         "worst_p": worst_p,
         "p_bound": p_bound,
+        "n_strata_exact": n_exact,
         "strata": [{"label": r[1], "n": r[2], "enrichment": r[3], "p": r[4],
                     "ci_lo": r[5], "ci_hi": r[6]} for r in rows],
         "n_strata_interval_excludes_1": sum(1 for r in rows if r[5] > 1.0),

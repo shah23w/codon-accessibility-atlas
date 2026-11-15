@@ -7,7 +7,7 @@ genetic code alone, with no data, and is then shown to predict the data exactly.
 
   A  the enumeration: for each wild-type residue, how many target residues its
      synonymous codons DISAGREE about reaching. Ten residues can ever give an
-     informative test; ten are dead by arithmetic.
+     informative test; ten are uninformative by the code.
   B  the correction. Lysine is two-fold degenerate yet informative, because the
      ATN block it reaches is split between Ile and Met, while glutamate's GTN
      block is not, which the residue-level form of the rule gets wrong.
@@ -128,7 +128,7 @@ axA.set_ylabel("Informative targets")
 axA.set_xlabel("Wild-type residue")
 S.recessive_grid(axA, "y")
 n_live = sum(1 for c in counts if c)
-# No title and no "dead by arithmetic" callout. Ten bars at zero beside ten
+# No title and no colloquial callout. Ten bars at zero beside ten
 # that are not IS the finding, and the legend names it. Nature's figures do
 # not argue on the canvas.
 S.panel_label(axA, "a")
@@ -188,12 +188,16 @@ for i in range(2):
             axC.add_patch(Rectangle((j, 1 - i), 1, 1, facecolor="none",
                                     hatch="/////", edgecolor=S.MUTED,
                                     linewidth=0, alpha=0.9))
-            axC.text(j + 0.5, 1 - i + 0.26, "forbidden\nby the code",
+            axC.text(j + 0.5, 1 - i + 0.26, "Forbidden\nby the code",
                      # 5.2, not 4.9: the NEE specification floor is 5 pt and
                      # fig99 rejects anything under it. The cell is about
                      # 120 pt wide, so the label has room at this size.
+                     # The label sits on the hatch, so it carries a white
+                     # patch behind it or the diagonals run through the text.
                      ha="center", va="center", fontsize=5.2, color=S.MUTED,
-                     linespacing=1.15)
+                     linespacing=1.15,
+                     bbox=dict(facecolor="white", edgecolor="none",
+                               boxstyle="square,pad=0.22"))
         axC.text(j + 0.5, 1.5 - i, str(v), ha="center", va="center",
                  fontsize=7,
                  color="white" if (on_diag and v) else S.MUTED,
@@ -258,8 +262,8 @@ axD.text(0.10, y + 0.028, "Informative", fontsize=6.2, color=S.INK,
          va="center")
 axD.plot(0.465, y + 0.028, "o", ms=4.6,
          mfc="none", mec=S.MUTED, mew=1.0, clip_on=False)
-axD.text(0.51, y + 0.028, "dead by arithmetic", fontsize=6.2, color=S.INK,
-         va="center")
+axD.text(0.51, y + 0.028, "Uninformative by the code", fontsize=6.2,
+         color=S.INK, va="center")
 S.panel_label(axD, "d")
 
 # --------------------------------------------------------------------------- #

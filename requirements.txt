@@ -1,0 +1,71 @@
+# Codon-Accessibility Atlas — pinned environment
+#
+# Every version below was READ FROM AN INSTALLED ENVIRONMENT, not typed from
+# memory. The package list was derived by parsing the import statements of all
+# 131 scripts in src/ with Python's own AST module, so this file names what the
+# code actually imports and nothing else.
+#
+# TWO STACKS produced results in this project, and that is stated rather than
+# hidden:
+#
+#   Stack A, verified 2026-07-31 — Python 3.12.7, biopython 1.87, pandas 2.3.2,
+#     numpy 1.26.4, scipy 1.13.1, statsmodels 0.14.2, matplotlib 3.10.0.
+#     Produced the atlas, the resistance record and the July/August results.
+#
+#   Stack B, captured 2026-11-01 — the versions below, from the HZAU cluster
+#     micromamba environment `codon`, whose explicit lock lists 175
+#     packages.
+#     Produced the post-rejection results of 26 September onward.
+#
+# The two were cross-checked, not assumed equivalent: on 2026-11-01 the four
+# steps that own the headline statistics were re-run under Stack B and
+# results/canonical_quantities.csv came out BYTE-IDENTICAL to the file produced
+# under Stack A. Install Stack B to reproduce.
+
+# ---- Python ----
+# Python 3.11.16   (pip cannot pin the interpreter; use the lock file)
+
+# ---- analysis ----
+biopython==1.88
+pandas==3.0.6
+numpy==2.4.6
+scipy==1.17.1
+statsmodels==0.15.0
+matplotlib==3.10.9
+
+# ---- building the manuscript, SI Appendix and Dataset workbooks ----
+# Omitted from every earlier version of this file, which meant a reader
+# following it could not build the deliverables at all.
+python-docx==1.2.0        # step10_03 to step10_06, step10_07, step10_05
+openpyxl==3.1.5           # step10_04, step10_06, fig01_dataset_and_context
+# lxml 6.1.3 and pillow 12.3.0 are installed as python-docx dependencies.
+
+# ---- ISOLATED environment for step6_01 ONLY: ./env/esm ----
+#   python3 -m venv env/esm
+#   ./env/esm/bin/pip install torch==2.2.2 fair-esm==2.0.0
+#   ./env/esm/bin/python src/step6_01_esm_variant_effects.py
+# Kept separate deliberately: installing torch into the main environment damaged
+# it once (CHANGELOG CORRECTION 11), and step6_01 is its only consumer.
+#   torch==2.2.2
+#   fair-esm==2.0.0
+# Model: esm2_t33_650M_UR50D (2.6 GB, auto-downloaded to ~/.cache/torch).
+# Masked-marginal scoring; specification in results/rev12_methods_esm.md.
+# Peak RSS measured at 2.82 GB; safe on an 8 GB machine, not to be run
+# concurrently with other heavy work.
+# NOT PRESENT on the HZAU cluster as of 2026-11-01, so step6_01 cannot be
+# re-run there. Its outputs in results/ were produced under Stack A.
+
+# ---- REMOVED on 2026-11-01, because no script imports them ----
+# scikit-learn, seaborn, h5py, tqdm — pinned by every earlier version of this
+# file and imported by none of the 131 scripts. scikit-learn 1.9.1 is installed
+# in the cluster environment but unused.
+# gcsfs — imported only by step5_04_ag3_phased_twostep.py, part of the
+# population-genomic arm withdrawn under Step 14. It is absent from the
+# environment and that script is excluded from the deposit.
+
+# ---- R, required by step7_01_phyloglm only (invoked via Rscript) ----
+#   R 4.4.3, with ape 5.8.1, phylolm 2.6.5, logistf 1.26.1
+#   install.packages(c("ape", "phylolm", "logistf"))
+# phytools was listed in docs/PROVENANCE.md and is not used by any script.
+# NOT AVAILABLE on the HZAU cluster as of 2026-11-01: R is not on PATH, so
+# step7_01_phyloglm cannot be run there at present.

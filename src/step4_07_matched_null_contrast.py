@@ -188,12 +188,15 @@ def main():
     ap.add_argument("--atlas", default="codon_atlas.csv")
     ap.add_argument("--events", default="core_test_events_primary.csv")
     ap.add_argument("--substitutions", default="ancestral_substitutions.csv")
+    ap.add_argument("--tag", default="",
+                    help="suffix for the output files, so a sensitivity run on another "
+                         "substitution set cannot overwrite the primary results")
     ap.add_argument("--validate", action="store_true",
                     help="reproduce step4_01's two deep-time nulls and assert they match")
     args = ap.parse_args()
 
     ensure_dirs()
-    log = Tee("step4_07_matched_null_contrast")
+    log = Tee("step4_07_matched_null_contrast" + args.tag)
     log("=== Step 4.7  matched-null contrast: rapid adaptation vs deep time ===\n")
     rng = random.Random(SEED)
 
@@ -223,7 +226,7 @@ def main():
     # restricting it to wild-type would erase the deep-time class. Both numbers
     # are written out, so that the Supplementary Information states the reason
     # from a file rather than asserting it.
-    _pp = os.path.join(DIR_RESULTS, "matched_null_codon_pool.csv")
+    _pp = os.path.join(DIR_RESULTS, "matched_null_codon_pool%s.csv" % args.tag)
     with open(_pp, "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["quantity", "value", "definition"])
@@ -319,7 +322,17 @@ def main():
                     f"[{est['ci_lo']:6.3f},{est['ci_hi']:6.3f}] {est['p_exact']:10.2e}")
             if len(cells) == 2:
                 r, d = cells["rapid"], cells["deep_time"]
-                sep = "SEPARATED" if r["ci_lo"] > d["ci_hi"] else "OVERLAPPING"
+                # Two-sided. The earlier form tested only r["ci_lo"] > d["ci_hi"],
+                # so a separation with the deep-time class higher, which is what
+                # the codon-randomised null produces, was reported as
+                # OVERLAPPING. Which class is higher is recorded as well, so the
+                # verdict cannot be read without its direction.
+                if r["ci_lo"] > d["ci_hi"]:
+                    sep = "SEPARATED rapid higher"
+                elif d["ci_lo"] > r["ci_hi"]:
+                    sep = "SEPARATED deep time higher"
+                else:
+                    sep = "OVERLAPPING"
                 log(f"  {'':18} -> rapid {r['ratio']:.3f} vs deep {d['ratio']:.3f}; "
                     f"bootstrap CIs {sep}")
                 rows.append(dict(subset=sub_name, null=null_name, cls="CONTRAST",
@@ -330,7 +343,7 @@ def main():
                                  n_species=sep))
         log("")
 
-    out = os.path.join(DIR_RESULTS, "matched_null_contrast.csv")
+    out = os.path.join(DIR_RESULTS, "matched_null_contrast%s.csv" % args.tag)
     with open(out, "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=["subset", "null", "cls", "n", "observed",
                                            "expected", "ratio", "p_exact", "ci_lo",

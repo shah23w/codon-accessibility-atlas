@@ -45,6 +45,7 @@ genetic-code operations.
 | `figures/` | each figure as published, in vector PDF, 600 dpi RGB TIFF and 600 dpi PNG, with its source data |
 | `MANIFEST.csv` | every file with its SHA-256, and for each script which of the three it is |
 | `VERSIONS.txt` | the environment that drew the figures, and the pinned one that computed the tables |
+| `requirements.txt` | the pinned analysis environment `VERSIONS.txt` is taken from |
 
 Not included: the raw genome assemblies and proteomes the atlas was built
 from, which are public downloads named in the Methods with their accessions,
@@ -59,7 +60,7 @@ reached on a clean run.
 ## Software
 
 Python 3.11 with NumPy, SciPy, pandas, Matplotlib, statsmodels, Biopython and
-openpyxl. Versions in `VERSIONS.txt`.
+openpyxl. Versions in `VERSIONS.txt`, pinned in `requirements.txt`.
 
 ## Licence
 

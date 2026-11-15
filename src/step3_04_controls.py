@@ -321,6 +321,25 @@ def main():
                 ge2 += 1
         ex = t2 / 20000
         p = (ge2 + 1) / 20001
+        # The exact tail as well as the permutation estimate. Every other
+        # stratification file carries p_exact; this one did not, which left the
+        # one figure that reads it able to quote only a permutation bound, and
+        # a permutation bound is what the rest of the paper says it does not
+        # report. The per-event probability is the fraction of the site's pool
+        # that reaches the allele, so the count is Poisson-binomial.
+        ps = [sum(1 for c in pool_by_site[(e["gene"], e["site_label"])]
+                  if codon_reaches(c, e["resistance_allele"]))
+              / len(pool_by_site[(e["gene"], e["site_label"])]) for e in sub]
+        dist = [1.0]
+        for pj in ps:
+            nxt = [0.0] * (len(dist) + 1)
+            for k, v in enumerate(dist):
+                if v:
+                    nxt[k] += v * (1.0 - pj)
+                    nxt[k + 1] += v * pj
+            dist = nxt
+        p_exact = sum(dist[o:]) if o < len(dist) else 0.0
+        expected_exact = sum(ps)
         log(f"  {label:26s} n={len(sub):3d} obs={o:3d} ({o/len(sub):5.1%})  "
             f"null={ex:5.2f}  enrich={o/ex if ex else float('nan'):4.2f}x  p={p:.5f}")
         _ci = cluster_bootstrap_ci(
@@ -332,7 +351,10 @@ def main():
         erows.append({"stratum": label, "n_events": len(sub), "n_accessible": o,
                       "ci_lo": _ci[0], "ci_hi": _ci[1],
                       "expected_null": round(ex, 3),
-                      "enrichment": round(o / ex, 3) if ex else "", "p_permutation": p})
+                      "enrichment": round(o / ex, 3) if ex else "",
+                      "p_permutation": p,
+                      "expected_exact": round(expected_exact, 4),
+                      "p_exact": p_exact})
     log("  -> the effect should NOT be confined to well-studied species")
     with open(os.path.join(DIR_RESULTS, "control_effort" + TAG + ".csv"), "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=list(erows[0].keys()))

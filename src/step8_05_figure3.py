@@ -191,7 +191,7 @@ def main():
                          f"Observed\n(n = {len(obs)})"], fontsize=6.2)
     axA.set_xlim(-0.62, 1.62)
     axA.set_ylim(0, 58)
-    axA.set_ylabel("Proportion (%); denominators differ, see legend",
+    axA.set_ylabel("Percentage (%)",
                    fontsize=6.4)
     st.recessive_grid(axA, "y")
     for i in xx:
